@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    background-color: rgb(27, 26, 26);
+    width: 100vw;
+    height: 100vh;
+}
+#Logo {
+    width: 5em;
+    cursor: pointer;
+text-align: center;
+    display: flex;
+}
+#Logo h4 {
+    position: absolute;
+    z-index: 2;
+    top: 1em;
+    left: 3em;
+    text-align: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: Regular;
+    font-family: monospace, serif;
+}
+#Navbar {
+    position: relative;
+    z-index: 1;
+    left: 28em;
+    top: 1.5em;
+    text-align: center;
+  width: 10em;
+    display: flex;
+    align-items: center;
+}
+ ul  {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+#Navbar li {
+    list-style: none;
+}
+#Navbar li a {
+    text-decoration: None;
+    display: flex;
+    gap: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: Regular;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn a {
+    text-decoration: none;
+    cursor: pointer;
+    color: aqua;
+    position: relative;
+    left: 70em;
+    top: 0.2em;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.4em 1em;
+    cursor: pointer;
+}
