@@ -13,9 +13,23 @@
 <body>
     <!-- Navbar -->
      <nav class="flex items-center justify-between p-3 bg-white">
-            <a href="#" id="Logo" class="flex items-center text-xl font-mono text-gray-800 decoration-none px-3 py2 cursor-pointer">
+            <!--Logo -->
+        <a href="#" id="Logo" class="flex items-center text-xl font-mono text-gray-800 decoration-none px-3 py2 cursor-pointer hover:text-blue-600">
                 DEV MUJI
             </a>
+            <!-- Desktop Nav Items -->
+            <div id="nav-menu" class=" hidden md:flex gap-12 uppercase ">
+                <a href="#" class="font-medium decoration-none hover:text-blue-600 cursor-pointer">Home</a>
+                <a href="#" class="font-medium decoration-none hover:text-blue-600 cursor-pointer">Projects</a>
+                <a href="#" class="font-medium decoration-none hover:text-blue-600 cursor-pointer">About</a>
+                <a href="#" class="font-medium decoration-none hover:text-blue-600 cursor-pointer">Contact</a>
+            </div>
+            <button class="hidden md:flex items-center border border-gray-400 rounded-lg px-6 py-2 hover:border-blue-600 text-gray-600">
+                <a href="#">
+                    Let's Connect
+                </a>
+            </button>
+            <!-- Mobile -->
             <button class="px-1 py-1 md:hidden" onclick="handleMenu()">
                 <i class="ri-menu-3-fill text-2xl cursor-pointer"></i>
             </button>
