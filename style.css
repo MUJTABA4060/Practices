@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+#Navbar {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+}
+.Logo {
+  color: white;
+  font-size: 3rem;
+  line-height: 6rem;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
