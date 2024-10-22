@@ -18,6 +18,9 @@
 .hamburger{
     display: none;
 }
+.close {
+    display: none;
+}
 .logo{
     font-size: 1.4rem;
     cursor: pointer;
@@ -85,13 +88,14 @@
 
 @media screen and (max-width: 600px) {
  .navbar {
+    display: flex;
     position: fixed;
   color: bisque;
     backdrop-filter: blur(2%);
  }
     .menu{
-    display: none;
- }   
+        display: none;
+    }
  .contact {
     display: none;
  }
