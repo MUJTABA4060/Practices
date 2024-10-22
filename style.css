@@ -10,10 +10,13 @@
     position: sticky;
     top: .2rem;
     /* background-color: black; */
-    color: rgba(57, 48, 48, 0.464);
+    /* color: rgba(57, 48, 48, 0.464); */
     padding: 1rem;
     backdrop-filter: blur(10px);
     z-index: 999;
+}
+.hamburger{
+    display: none;
 }
 .logo{
     font-size: 1.4rem;
@@ -81,10 +84,24 @@
 /* Responsive Navbar */
 
 @media screen and (max-width: 600px) {
- .menu{
+ .navbar {
+    position: fixed;
+  color: bisque;
+    backdrop-filter: blur(2%);
+ }
+    .menu{
     display: none;
  }   
  .contact {
     display: none;
+ }
+ .hamburger {
+    display: block;
+    color: black;
+    font-size: 1.9rem;
+    position: sticky;
+    top: .5rem;
+    left: 90%;
+    cursor: pointer;
  }
 }
