@@ -26,15 +26,18 @@ html , body {
     align-items: center;
     justify-content: space-between;
 }
-.navbar h1 {
-    margin-left: 2rem;
-    text-transform: uppercase;
+
+.Logo img {
+    position: relative;
+    top: .5rem;
+    left: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
     cursor: pointer;
     transition: .22s ease-in-out;
 }
-.navbar h1:hover{
-    color: rgb(68, 63, 63);
-}
+ 
 .navbar ul {
     display: flex;
     gap: 2rem;
