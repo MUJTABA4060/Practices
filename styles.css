@@ -79,7 +79,7 @@ nav .Logo img {
 
 /* Button styles */
 
-button {
+.btn1 {
   padding: 0.5em 1em;
   border: none;
   outline: none;
@@ -127,3 +127,83 @@ button:hover {
 }
 
 /* Navbar Ends */
+
+
+/* Main  */
+
+.Main  {
+  position: relative;
+  top: 9em;
+width: 100%;
+height: 60vh;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.Main p {
+  width: 60%;
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #464343;
+  text-shadow: #007bff71 0.1em 0.2em 0.1em;
+}
+
+.right
+{
+  width: 50%;
+  text-align: center;
+  padding: 1em 2em;
+  position: relative;
+
+}
+
+.left {
+
+  width: 50%;
+}
+
+.btn2 {
+  
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+    color: #fff;
+     cursor: pointer;
+    background-color: #007bff;
+    position: relative;
+    left: 0em;
+    bottom: 2em;
+    margin: auto;
+    top: 3em;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .Main{
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+    top:3em ;
+    position: relative;
+  }
+
+  .left {
+    width: 100%;
+    position: relative;
+  }
+  .btn2 {
+    top: 03em;
+  }
+}
