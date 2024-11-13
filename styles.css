@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body {
@@ -9,70 +10,119 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
+
 body {
-  background-color: rgb(28, 27, 27);
-  color: #fff;
+  background-color: #f8f9fa;
 }
+
+/* Page 1 */
+
 #Home {
   width: 100%;
   height: 100vh;
 }
+
+/* Navbar begins */
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: .8em 3em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
+
 nav .Logo img {
   width: 5em;
   border-radius: 50%;
   cursor: pointer;
-  position: fixed;
-  left: 2em;
-  top: 1em;
+  transition: transform 0.3s ease;
 }
 
 .nav-items {
-  position: fixed;
-  left: 47em;
-  top: 2.6em;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-.nav-items ul {
-  display: flex;
-  list-style: none;
   align-items: center;
-  justify-content: center;
+  position: fixed;
+  right: 2em;
+  z-index: 100;
+}
+
+.nav-items ul {
+  list-style: none;
   gap: 1em;
-  position: relative;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .nav-items ul li a {
+  align-items: center;
   text-decoration: none;
-  color: whitesmoke;
-  font-size: 1.2em;
+  color: #333;
+  cursor: pointer;
   font-weight: 500;
-  transition: all 0.3s ease;
   text-transform: uppercase;
-  position: relative;
+  transition: color 0.3s ease;
 }
+
+.nav-items i {
+  display: none;
+}
+
+/* Button styles */
+
 button {
   padding: 0.5em 1em;
-  outline: none;
-  position: fixed;
-  top: 2.4em;
-  right: 2em;
-  border-radius: 0.5em;
   border: none;
-  background-color: #000;
+  outline: none;
+  border-radius: .3em;
+  background-color: #007bff;
   color: #fff;
   cursor: pointer;
-  font-size: 1em;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
-@media (max-width:600px) {
-  .nav-items {
+
+/* Hover state */
+
+.nav-items ul li a:hover {
+  color: #007bff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  
+  nav {
+    padding: 1em 2em;
+  }
+  .nav-items ul  {
     display: none;
+  }
+  .nav-items button {
+    display: none;
+  }
+  .nav-items i{
+    display: block;
+    cursor: pointer;
+    font-size: 2.2em;
+    color: #333;
+    transition: color 0.3s ease;
+    position: fixed;
+    right: .5em;
+    z-index: 100;
+  }
+  nav.Logo img {
+    width: 2em;
   }
 }
