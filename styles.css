@@ -77,6 +77,10 @@ nav .Logo img {
   display: none;
 }
 
+ #close {
+  display: none;
+}
+
 /* Button styles */
 
 .btn1 {

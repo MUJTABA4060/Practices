@@ -26,6 +26,7 @@
             <li><a href="#Contact">Contact</a></li>
           </ul>
           <i class="ri-menu-3-fill"></i>
+          <i id="close"  class="ri-close-fill"></i>
           <button class="btn1">Let's Collaborate</button>
         </div>
       </nav>
@@ -53,5 +54,34 @@
     <div id="About">
       
       </div>
+
+      <script>
+
+        const navbar = document.querySelector('nav');
+        const navItems = document.querySelector('.nav-items');
+        const menuIcon = document.querySelector('.ri-menu-3-fill');
+        const closeIcon = document.querySelector('#close');
+
+
+        menuIcon.addEventListener('click', () => {
+          navItems.style.display = 'flex';
+          menuIcon.style.display = 'none';
+          closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', () => {
+          navItems.style.display = 'none';
+          menuIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+        });
+
+        window.addEventListener('scroll', () => {
+          navbar.classList.toggle('sticky', window.scrollY > 0);
+        });
+        
+
+
+
+      </script>
   </body>
 </html>
