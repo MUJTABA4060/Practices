@@ -55,59 +55,5 @@
       
       </div>
 
-      <script>
-
-        const navbar = document.querySelector('nav');
-        const navItems = document.querySelector('.nav-items');
-        const menuIcon = document.querySelector('.ri-menu-3-fill');
-        const closeIcon = document.querySelector('#close');
-
-
-        menuIcon.addEventListener('click', () => {
-          navItems.style.display = 'flex';
-          menuIcon.style.display = 'none';
-          closeIcon.style.display = 'block';
-        });
-
-        closeIcon.addEventListener('click', () => {
-          navItems.style.display = 'none';
-          menuIcon.style.display = 'block';
-          closeIcon.style.display = 'none';
-        });
-
-        window.addEventListener('scroll', () => {
-          navbar.classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        // Button Animation
-
-        const btn1 = document.querySelector('.btn1');
-        const btn2 = document.querySelector('.btn2');
-
-        btn1.addEventListener('mouseover', () => {
-          btn1.style.transform = 'scale(1.1)';
-          btn1.style.transition = 'transform 0.5s';
-          btn1.style.cursor = 'pointer';
-          btn1.style.backgroundColor = '#3498db';
-          btn1.style.color = 'white';
-          btn1.style.border = 'none';
-          btn1.style.boxShadow = '0px 0px 10px 0px rgba(52, 152, 219, 0.2)';
-          btn1.style.textShadow = '0px 0px 5px 0px rgba(52, 152, 219, 0.2)';
-          btn1.style.transition = 'transform 0.5s';
-          btn1.style.transition = 'backgroundColor 0.5s';
-          btn1.style.transition = 'color 0.5s';
-          btn1.style.transition = 'boxShadow 0.5s';
-          btn1.style.transition = 'textShadow 0.5s';
-          btn1.style.transition = 'border 0.5s';
-       
-        });
-
-        
-
-        
-
-
-
-      </script>
   </body>
 </html>
