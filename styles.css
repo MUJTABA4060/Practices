@@ -95,6 +95,11 @@ body {
   background-color: rgba(42, 36, 36, 0.753);
   color: #fff;
 }
+#Menu {
+ display: none;
+}
+
+
 
 /* For Laptop Navbar ends  */
 
@@ -116,5 +121,15 @@ body {
   }
   .btn-1 a {
     display: none !important;
+  }
+  #Menu {
+    display: block;
+    font-size: 1.7em;
+    cursor: pointer;
+    color: #333;
+    position: fixed;
+    right: 1em;
+    align-items: center;
+    z-index: 100;
   }
 }
