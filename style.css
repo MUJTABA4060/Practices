@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#Home {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  border-radius: 20%;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+nav .Logo {
+  width: 5em;
+  cursor: pointer;
+  font-size: 1.8em;
+}
+.links ul {
+  display: flex;
+  gap: 1.5em;
+}
+
+.links ul li {
+  list-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.links ul li:hover {
+  color: rgba(31, 68, 136, 0.842);
+}
+
+.btn-1 {
+  padding: 0.3em 1.1em;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5em;
+}
+.btn-1 a {
+  text-decoration: none;
+  font-size: large;
+  color: #000;
+}
+
+.btn-1:hover {
+  background-color: #dedede;
+}
+
+.top img {
+  border-radius: 15em;
+  position: relative;
+  top: 6em;
+  margin: auto 13em;
+}
+.Bottom {
+  position: relative;
+  top: 10em;
+  display: inline-block;
+  padding: 0 10em;
+  align-items: center;
+}
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+.btn-2 {
+  align-items: center;
+}
+.btn-2 a {
+  left: 28em;
+  text-decoration: none;
+  position: relative;
+  top: 2em;
+  align-items: center;
+  padding: 0.3em 1.1em;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5em;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .links ul {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    top: 5em;
+
+    background-color: #dedede;
+    color: #000;
+  }
+  .links ul li {
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  .top img {
+    position: relative;
+    top: 7em;
+    right: 6em;
+    box-shadow: #fff;
+    width: 15em;
+    height: 15em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .btn-2 {
+    position: relative;
+    right: 26em;
+  }
+}
