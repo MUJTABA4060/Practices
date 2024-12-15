@@ -27,6 +27,11 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  color: #f39c12;
 }
 
 .nav-links {
