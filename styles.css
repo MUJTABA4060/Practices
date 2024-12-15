@@ -67,22 +67,19 @@ body {
 }
 
 /* Hamburger Menu Styles */
-.hamburger-menu {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      width: 100%;
-  }
-
-  .nav-links.active {
-      display: flex;
-  }
-
-  .menu-toggle {
-      display: flex;
-  }
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  top: 0;
 }
+
+.nav-links.active {
+  display: flex;
+}
+
+.menu-toggle {
+  display: flex;
+  cursor: pointer;;
+}
+
