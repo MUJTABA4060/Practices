@@ -66,8 +66,8 @@ body {
   margin: 3px 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Hamburger Menu Styles */
+.hamburger-menu {
   .nav-links {
       display: none;
       flex-direction: column;
