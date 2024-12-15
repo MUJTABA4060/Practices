@@ -83,3 +83,18 @@ body {
   cursor: pointer;;
 }
 
+
+@media screen and (max-width: 768px) {
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;  
+    left: 0;  
+    width: 100%;  
+    background-color: #333;
+    padding: 10px 0;
+  }
+}
+
